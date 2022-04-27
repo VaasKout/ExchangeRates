@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/popular_fragment_screen">
+    <fragment
+        android:id="@+id/favorites_fragment_screen"
+        android:name="com.example.exchangerate.ui.favorites.FavoritesFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/popular_fragment" />
+    <fragment
+        android:id="@+id/popular_fragment_screen"
+        android:name="com.example.exchangerate.ui.popular.PopularFragment"
+        android:label="@string/popular"
+        tools:layout="@layout/popular_fragment" />
+</navigation>

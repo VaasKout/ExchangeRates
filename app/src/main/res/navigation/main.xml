@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/main_fragment_screen">
+
+    <fragment
+        android:id="@+id/main_fragment_screen"
+        android:name="com.example.exchangerate.ui.common.MainFragment"
+        android:label="@string/main"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_main_fragment_screen_to_bottom_navigation"
+            app:destination="@id/bottom_navigation"
+            app:popUpTo="@id/main_fragment_screen" />
+        <action
+            android:id="@+id/action_main_fragment_screen_to_sort_fragment_screen"
+            app:destination="@id/sort_fragment_screen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/main_fragment_screen" />
+    </fragment>
+
+    <include app:graph="@navigation/bottom_navigation" />
+
+    <fragment
+        android:id="@+id/sort_fragment_screen"
+        android:name="com.example.exchangerate.ui.sort.SortFragment"
+        android:label="@string/sort"
+        tools:layout="@layout/sort_fragment" />
+
+</navigation>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Exchange Rate</string>
+    <string name="main">Main</string>
+    <string name="favorites">Favorites</string>
+    <string name="popular">Popular</string>
+    <string name="sort">Sort</string>
+    <string name="empty_warning">There\'s no favorite rates yet, try to add new one in \'popular\' screen</string>
+    <string name="unable_to_load">Unable to load data</string>
+    <string name="currency">Currency</string>
+    <string name="settings">Settings</string>
+    <string name="sort_settings">Sort Settings</string>
+    <string name="alphabet_ascending_order">Alphabet Ascending Order</string>
+    <string name="alphabet_descending_order">Alphabet Descending Order</string>
+    <string name="rate_ascending_order">Rate Ascending Order</string>
+    <string name="rate_descending_order">Rate Descending Order</string>
+</resources>
